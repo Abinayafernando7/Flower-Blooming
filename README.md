@@ -1,15 +1,17 @@
 # Flower-Blooming
 Using AI to predict whether the Flower will bloom or not
 
-# Plant Growth Prediction
+# 🌱 Plant Growth Prediction App
 
-This Python script predicts whether a plant will grow based on three factors:
-- **Moisture**: Should be between 4-7.
-- **pH Level**: Should be between 6-8.
-- **Photosynthetic Active Radiation (PAR)**: Should be between 400-700 nm.
+This application predicts whether a plant will grow based on three key metrics:
+- **Moisture** (1-10)
+- **pH Level** (0-14)
+- **Photosynthetic Active Radiation (PAR)** (nm)
 
-## Usage
-Run the script and enter the required values:
+## 🔗 Try the Live App
+👉 [Click here to run the Plant Growth Predictor](https://your-streamlit-app-link)
 
-```bash
-python plant_growth.py
+## 🚀 How to Run Locally
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/YOUR_GITHUB_USERNAME/plant-growth-prediction.git
