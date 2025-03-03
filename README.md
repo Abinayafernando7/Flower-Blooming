@@ -9,7 +9,7 @@ This application predicts whether a plant will grow based on three key metrics:
 - **Photosynthetic Active Radiation (PAR)** (nm)
 
 ## 🔗 Try the Live App
-👉 http://192.168.1.7:8501/
+👉 Click on link to see demo : http://192.168.1.7:8501/
 
 ## 🚀 How to Run Locally
 1. Clone the repository:
