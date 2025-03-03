@@ -15,3 +15,16 @@ This application predicts whether a plant will grow based on three key metrics:
 1. Clone the repository:
    ```bash
    git clone https://github.com/YOUR_GITHUB_USERNAME/plant-growth-prediction.git
+
+2. Install Dependencies:
+   ```bash
+   pip install streamlit
+
+3. Run the App :
+   ```bash
+   streamlit run plant_growth.py
+
+---
+
+### 🎉 **Now You Have a Fully Functional UI and Hosted App!**
+Let me know if you need help deploying! 🚀
