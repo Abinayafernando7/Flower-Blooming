@@ -20,3 +20,21 @@ def will_plant_grow(moisture, ph, par):
         return f"The plant will grow well. Probability: {growth_percentage:.2f}%", ph_status, moist_status, par_status
     else:
         return f"The plant might not grow properly due to unfavorable conditions. Probability: {growth_percentage:.2f}%", ph_status, moist_status, par_status
+
+# Streamlit UI
+st.title("🌱 Plant Growth Prediction App")
+
+# User input fields
+moisture = st.number_input("Enter Moisture level (1-10):", min_value=1.0, max_value=10.0, step=0.1)
+ph = st.number_input("Enter pH level:", min_value=0.0, max_value=14.0, step=0.1)
+par = st.number_input("Enter PAR value (nm):", min_value=0.0, max_value=1000.0, step=1.0)
+
+if st.button("Predict Growth"):
+    result, ph_reason, moist_reason, par_reason = will_plant_grow(moisture, ph, par)
+    
+    # Display results
+    st.subheader("🌿 Plant Growth Prediction:")
+    st.write(result)
+    st.write(f"**pH Condition:** {ph_reason}")
+    st.write(f"**Moisture Condition:** {moist_reason}")
+    st.write(f"**PAR Condition:** {par_reason}")
