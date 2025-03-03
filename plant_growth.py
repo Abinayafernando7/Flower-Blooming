@@ -1,3 +1,5 @@
+import streamlit as st
+
 def will_plant_grow(moisture, ph, par):
     # Define conditions
     ph_good = 6 <= ph <= 8
@@ -18,18 +20,3 @@ def will_plant_grow(moisture, ph, par):
         return f"The plant will grow well. Probability: {growth_percentage:.2f}%", ph_status, moist_status, par_status
     else:
         return f"The plant might not grow properly due to unfavorable conditions. Probability: {growth_percentage:.2f}%", ph_status, moist_status, par_status
-
-# Take input from the user
-moisture = float(input("Enter Moisture level (1-10): "))
-ph = float(input("Enter pH level: "))
-par = float(input("Enter PAR value (nm): "))
-
-# Evaluate plant growth
-result, ph_reason, moist_reason, par_reason = will_plant_grow(moisture, ph, par)
-
-# Print results
-print("\nPlant Growth Prediction:")
-print(result)
-print(f"pH Condition: {ph_reason}")
-print(f"Moisture Condition: {moist_reason}")
-print(f"PAR Condition: {par_reason}")
