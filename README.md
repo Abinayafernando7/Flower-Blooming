@@ -22,7 +22,7 @@ This application predicts whether a plant will grow based on three key metrics:
 
 3. Run the App :
    ```bash
-   streamlit run plant_growth.py
+   streamlit run flower_growth.py
 
 ---
 
