@@ -22,7 +22,7 @@ def will_plant_grow(moisture, ph, par):
         return f"The plant might not grow properly due to unfavorable conditions. Probability: {growth_percentage:.2f}%", ph_status, moist_status, par_status
 
 # Streamlit UI
-st.title("🌼Plant Growth Prediction App🌼")
+st.title("🌼Flower Blooming Predcition App")
 
 # User input fields
 moisture = st.number_input("Enter Moisture level (1-10):", min_value=1.0, max_value=10.0, step=0.1)
@@ -33,7 +33,7 @@ if st.button("Predict Growth"):
     result, ph_reason, moist_reason, par_reason = will_plant_grow(moisture, ph, par)
     
     # Display results
-    st.subheader("🌿🌺🌸 Plant Growth Prediction:")
+    st.subheader("🌿🌺🌸 Flower Blooming Prediction:")
     st.write(result)
     st.write(f"**pH Condition:** {ph_reason}")
     st.write(f"**Moisture Condition:** {moist_reason}")
