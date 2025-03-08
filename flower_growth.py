@@ -22,7 +22,7 @@ def will_plant_grow(moisture, ph, par):
         return f"The plant might not grow properly due to unfavorable conditions. Probability: {growth_percentage:.2f}%", ph_status, moist_status, par_status
 
 # Streamlit UI
-st.title("🌼Flower Blooming Predcition App")
+st.title("Flower Blooming Prediction App")
 
 # User input fields
 moisture = st.number_input("Enter Moisture level (1-10):", min_value=1.0, max_value=10.0, step=0.1)
@@ -43,6 +43,6 @@ if st.button("Predict Growth"):
     # Display project credit in the middle of the page
 st.markdown("""
     <div style="display: flex; justify-content: center; align-items: center; height: 100px;">
-        <h4>Made with ❤️🌷by Jessie Wiselin</h4>
+        <h4>Made by Jessie Wiselin</h4>
     </div>
     """, unsafe_allow_html=True)
